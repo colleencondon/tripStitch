@@ -3,6 +3,9 @@ import logo from '../logo.svg';
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
+    position: fixed;
+    top: 0;
+    z-index: 10;
     width: 100%;
     background-color: #1F90D8;
     height: 60px;
@@ -17,7 +20,6 @@ const Logo = styled.img`
 
 class Header extends Component {
     render() {
-        const username = this.props.username;
         return (
             <HeaderContainer>
                 <Logo src={logo} className="App-logo" alt="logo"/>
