@@ -22,6 +22,7 @@ export class Container extends React.Component {
       })
 
       this.map = new maps.Map(node, mapConfig); // creates a new Google map on the specified node (ref='map') with the specified configuration set above.
+
     }
   }
 
